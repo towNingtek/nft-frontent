@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="NTF store" />
+    <title>NFT store</title>
+    <link rel="icon" href="static/img/icons/ntf.png" type="image/x-icon" />
+    <!--Author https://www.flaticon.com/ru/authors/eucalyp-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/normalize.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="buttonTop"></div>
+        <!--Если не указать window, то при клике вызывается функция для элемента div, которая не знает скролл-->
+        <header class="header">
+          <a href="#" class="header__logo"></a>
+          <div class="form">
+            <button class="form__button"></button>
+            <input
+              class="form__input"
+              type="search"
+              placeholder="Search items and collections"
+            />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Collections</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Features</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">FAQ</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link header__link_gradient"
+                  >Select Wallet</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="header__burger">
+            <button class="header__menu"></button>
+            <span class="header__search"></span>
+          </div>
+        </header>
+        <section class="presentetion">
+          <div class="main">
+            <div class="main__text">
+              <h1 class="main__title">
+                Create, Sell & Collect Your Own Creative NFT
+              </h1>
+              <p class="main__desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit.
+              </p>
+              <a class="main__btn main__btn_gradient" href="#">Explore Now</a>
+              <a class="main__btn" href="#">Sell NFT</a>
+              <ul class="main__list">
+                <li class="main__item">
+                  <span class="main__span">37k+</span>Artworks
+                </li>
+                <li class="main__item">
+                  <span class="main__span">20k+</span>Artists
+                </li>
+                <li class="main__item">
+                  <span class="main__span">99k+</span>Aucations
+                </li>
+              </ul>
+            </div>
+            <div class="main__image">
+              <img
+                class="main__img"
+                src="static/img/presentation-img.png"
+                alt="The art presentation"
+                title="The presentation of artists and their works"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="companies">
+            <img
+              class="companies__img"
+              src="img/partners/binance-logo.svg"
+              alt="Binance logo"
+              title="Our partner Binance"
+            />
+            <img
+              class="companies__img"
+              src="img/partners/ethereum-logo.svg"
+              alt="Ethereum logo"
+              title="Our partner Ethereum"
+            />
+            <img
+              class="companies__img"
+              src="img/partners/blockchain-logo.svg"
+              alt="Blockchain logo"
+              title="Our partner Blockchain"
+            />
+          </div>
+          <section class="error-page">
+            <a href="404error.html" target="_blank" class="error-page__button"
+              >Press me gently</a
+            >
+          </section>
+        </section>
+        <section class="artworks">
+          <h2 class="title">Featured Artworks</h2>
+          <p class="desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="card">
+            <div class="card__item">
+              <div class="card__cover">
+                <img
+                  class="card__img"
+                  src="static/img/artwork-1.png"
+                  alt="Artwork 1"
+                  title="The artwork by Johny with cylindrical forms"
+                />
+              </div>
+              <div class="card__info">
+                <div>
+                  <p class="card__nick">@Johny</p>
+                  <p class="card__author">Yellow Painting</p>
+                </div>
+                <p class="card__bid">
+                  Current Bid<span class="card__price">85 USD</span>
+                </p>
+              </div>
+              <a href="#" class="card__link">Place a bid</a>
+            </div>
+            <div class="card__item">
+              <div class="card__cover">
+                <img
+                  class="card__img"
+                  src="static/img/artwork-2.png"
+                  alt="Artwork 1"
+                  title="The artwork by Johny with tower"
+                />
+              </div>
+              <div class="card__info">
+                <div>
+                  <p class="card__nick">@Johny</p>
+                  <p class="card__author">Yellow Painting</p>
+                </div>
+                <p class="card__bid">
+                  Current Bid<span class="card__price">85 USD</span>
+                </p>
+              </div>
+              <a href="#" class="card__link">Place a bid</a>
+            </div>
+            <div class="card__item">
+              <div class="card__cover">
+                <img
+                  class="card__img"
+                  src="static/img/artwork-3.png"
+                  alt="Artwork 1"
+                  title="The artwork by Johny with round forms"
+                />
+              </div>
+              <div class="card__info">
+                <div>
+                  <p class="card__nick">@Johny</p>
+                  <p class="card__author">Yellow Painting</p>
+                </div>
+                <p class="card__bid">
+                  Current Bid<span class="card__price">85 USD</span>
+                </p>
+              </div>
+              <a href="#" class="card__link">Place a bid</a>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <h2 class="title">Freaquently Asked Question</h2>
+          <p class="desc">Wanna Ask Something?</p>
+          <div class="faq__questions">
+            <div class="faq__item">
+              <button class="faq__collapsable">Lorem ipsum ipsum ?</button>
+              <div class="faq__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem porro earum rerum ipsa quam!
+                </p>
+              </div>
+              <button class="faq__collapsable">Lorem ipsum ipsum ?</button>
+              <div class="faq__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem porro earum rerum ipsa quam!
+                </p>
+              </div>
+              <button class="faq__collapsable">Lorem ipsum ipsum ?</button>
+              <div class="faq__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem porro earum rerum ipsa quam!
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__collapsable">Lorem ipsum ipsum ?</button>
+              <div class="faq__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem porro earum rerum ipsa quam!
+                </p>
+              </div>
+              <button class="faq__collapsable">Lorem ipsum ipsum ?</button>
+              <div class="faq__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem porro earum rerum ipsa quam!
+                </p>
+              </div>
+              <button class="faq__collapsable">Lorem ipsum ipsum ?</button>
+              <div class="faq__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem porro earum rerum ipsa quam!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="banner">
+          <h3 class="banner__title">Get ready to collect our NFT</h3>
+          <a href="#" class="banner__link">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
