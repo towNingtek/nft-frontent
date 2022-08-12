@@ -76,7 +76,7 @@ p {
   display: block;
   width: 129px;
   height: 25px;
-  background-image: url(../img/logo.svg);
+  background-image: url(../static/img/logo.svg);
   background-repeat: no-repeat;
 }
 
