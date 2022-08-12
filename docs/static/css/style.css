@@ -46,7 +46,7 @@ p {
   width: 64px;
   height: 64px;
   z-index: 50;
-  background: url(../static/img/icons/upArrow.png);
+  background: url(../img/icons/upArrow.png);
   background-size: cover;
   cursor: pointer;
   visibility: hidden;
@@ -76,7 +76,7 @@ p {
   display: block;
   width: 129px;
   height: 25px;
-  background-image: url(../static/img/logo.svg);
+  background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
 }
 
@@ -591,13 +591,13 @@ p {
     cursor: pointer;
   }
   .header__menu {
-    background-image: url(../static/img/burger.png);
+    background-image: url(../img/burger.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
   .header__menu.toggle {
-    background-image: url(../static/img/cross.png);
+    background-image: url(../img/cross.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
