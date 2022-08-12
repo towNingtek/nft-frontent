@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Raleway&display=swap");
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Poppins", "Raleway", sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  margin: 40px;
+}
+.header__menu-return {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 25px 35px;
+  border: 2px solid #000;
+  box-shadow: 15px 15px 0 #984d38;
+  transition: 0.1s;
+}
+
+.header__menu-return:hover {
+  box-shadow: -15px -15px 0 #b75cff;
+}
+
+.mainError {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainError__title {
+  color: #000;
+  margin: 0;
+  font-size: 300px;
+  letter-spacing: 10px;
+}
+
+.mainError__title::before,
+.mainError__title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+
+.mainError__title::before {
+  color: #984d38;
+  animation: glitch 1s infinite;
+}
+
+.mainError__title::after {
+  color: #b75cff;
+  animation: glitch 2s infinite;
+}
+
+.mainError__desc {
+  font-size: 40px;
+  padding: 0 30px;
+  text-align: center;
+  border-right: 20px solid #984d38;
+  border-left: 20px solid #b75cff;
+}
+
+@keyframes glitch {
+  0% {
+    top: -5px;
+    left: -3px;
+  }
+  25% {
+    top: 0px;
+    left: -3px;
+  }
+  50% {
+    top: 5px;
+    left: 3px;
+  }
+  75% {
+    top: 0px;
+    left: 5px;
+  }
+  100% {
+    top: -5px;
+    left: -3px;
+  }
+}
+
+@media (max-width: 880px) {
+  .header__menu-return {
+    font-size: 20px;
+  }
+  .mainError {
+    top: 30%;
+  }
+  .mainError__title {
+    font-size: 200px;
+  }
+  .mainError__desc {
+    font-size: 30px;
+  }
+}
+@media (max-width: 670px) {
+  .header {
+    justify-content: center;
+  }
+  .header__menu-return {
+    font-size: 18px;
+  }
+  .mainError__title {
+    font-size: 170px;
+  }
+  .mainError__desc {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 520px) {
+  .header__menu-return {
+    font-size: 16px;
+  }
+  .mainError {
+    top: 25%;
+  }
+  .mainError__title {
+    font-size: 160px;
+  }
+  .mainError__desc {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 440px) {
+  .header__menu-return {
+    font-size: 16px;
+    left: 10%;
+  }
+  .mainError__title {
+    font-size: 125px;
+  }
+  .mainError__desc {
+    font-size: 16px;
+  }
+}
