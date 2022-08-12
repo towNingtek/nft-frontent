@@ -68,7 +68,7 @@ async function purchase() {
     console.log("contract address: " + contractAddr);
     let response;
     const signerAddr = await signer.getAddress();
-    const proof = genMerkleTreeProof(signerAddr);
+    const proof = [ "0xac0e4810f6992d16ad50d242e3dfd593b57b03665165850be41d1b09f7d59a54", "0x5bba912964a7620d90f46a71a08039f2750788d96d292862ab9fbf59760db694" ];// genMerkleTreeProof(signerAddr);
     const contract = new ethers.Contract(contractAddr, abi, signer);
     response = await contract.purchase(signerAddr, 1, proof).catch(function(error) {
         console.error("Contract error: " + error);

@@ -2265,10 +2265,10 @@ const payABI = `
 document.getElementById("connect").onclick = function() {
     town.connectMetaMask();
 }
-/*
 document.getElementById("purchase").onclick = function() {
-    town.purchase("user1_abc", 1, "0x5faF6582Ede7D65362dcF343B42b83B2F3E2E7CF", abiC, "20");
+  town.purchase();
 }
+/*
 document.getElementById("remainder").onclick = function() {
     town.getRemainder();
 }
